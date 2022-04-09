@@ -20,12 +20,3 @@ app_init(void);
 void
 app_run(void);
 
-uint8_t
-serial_framing_callback(uint8_t *rx_ptr,uint8_t size);
-
-uint8_t
-app_get_power_on_state(void);
-
-void
-app_set_power_on_state(enum power_state_e state_e);
-
