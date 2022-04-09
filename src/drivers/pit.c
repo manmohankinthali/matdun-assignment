@@ -4,7 +4,6 @@
 #include "ics.h"
 #include "interrupt.h"
 
-#define  SCGC_PIT_CLOCK_ENABLE   0x02
 
 static volatile uint8_t m_timeout;
 

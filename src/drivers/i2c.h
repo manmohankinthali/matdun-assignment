@@ -2,24 +2,6 @@
 
 #include "mcu.h"
 
-//#define I2C_SLAVE_ADDRESS 0x68
-//#define I2C_MAX_ADDRESS   0x7F
-//#define I2C_SMBUS_ADDRESS 0x66
-
-//#define I2C_TIME_OUT    0x7FFF
-
-/* BAUD_RATE CALCULATIONS */
-/* BAUD_RATE = (FREQ_BUS_CLK / (MUL * SCL Divider))
- * Assume MUL = 2 all the time
- * Baud_rate wants to configure for 9600 (or) 9.6 kHz
- * FREQ_BUS_CLK = 24MHz
- * SCL Divider = (FREQ_BUS_CLK / BAUD_RATE) / MUL.
- * This value should be matched with the list given in data
- * sheet and the corresponding ISR Value should be choosen. */
-
-#define STANDARD_SPEED    // 100 kHz is the clock speed
-//#define FAST_SPEED        // 400 kHz is the clock speed
-//#define FAST_SPEED_PLUS   // 001 MHz is the clock speed
 
 enum operation_e
 {

@@ -1,10 +1,10 @@
-#include <stdint.h>
-#include <string.h>
+
 #include "app.h"
 #include "ics.h"
 #include "gpio.h"
 #include "pit.h"
 #include "adp_1650.h"
+
 
 static inline void
 app_logic(void);
